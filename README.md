@@ -65,7 +65,7 @@ The outcomes based on the launch date analysis shows the highest rate of launche
 Based on the analysis, the goal range with the highest success rate is the less than $1,000 range. At a 76% rate, this is the goal range I recommend.
 
 ## Limitations of the Dataset
-Data is OLD... It may have been the limitations of the dataset or limited knowledge on my behalf, but it would have been helpful to be able to drill down on more differences between the different outcomes. This would have allowed for greater insight into factors that may contribute to the various outcomes. 
+The data seems to be a couple of years old, so it may not be as relevant.  
 
 ## Suggested Additional Tables & Graphs
-CHANGE CHANGE
+It would have been helpful to drill down on more differences between the different outcomes. For example, comparing backers or average donation amount to outcomes would have allowed for greater insight into factors that may contribute to success. Additionally, comparing other subcategories using these variables would provide helpful information, as well.
