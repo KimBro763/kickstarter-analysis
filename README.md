@@ -57,15 +57,19 @@ Figure 2
 ## Challenges & Difficulties Encountered
 COUNTIF( ) was a challenge at first. I was able to understand how to integrate text using quotations into the function, which gave me the correct results. 
 
+---
 ## Results
-Conclusions re: Outcomes Based on Launch Date
+### Conclusions re: Outcomes Based on Launch Date
 The outcomes based on the launch date analysis shows the highest rate of launches occurring in May at 111 successful launches with the month of June holding the second highest number of successful outcomes at 100. Therefore, I recommend launching within one of these months. Additionally, December shows the least amount of successful launches at only 37 total.
 
-## Conclusions re: Outcomes Based on Goals
+### Conclusions re: Outcomes Based on Goals
 Based on the analysis, the goal range with the highest success rate is the less than $1,000 range. At a 76% rate, this is the goal range I recommend.
+
+---
 
 ## Limitations of the Dataset
 The data seems to be a couple of years old, so it may not be as relevant.  
 
+---
 ## Suggested Additional Tables & Graphs
 It would have been helpful to drill down on more differences between the different outcomes. For example, comparing backers or average donation amount to outcomes would have allowed for greater insight into factors that may contribute to success. Additionally, comparing other subcategories using these variables would provide helpful information, as well.
