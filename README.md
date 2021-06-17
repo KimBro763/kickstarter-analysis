@@ -1,67 +1,71 @@
-# **An Analysis of Kickstarter Campaigns**
+# Project Overview
 
-**Case Problem: Fundraising Campaigns** 
+## Purpose and Background
+As a result of analyzing crowdfunding campaign data, our client launched a campaign that nearly reached its fundraising goal in a short period of time. To gain further insights, we will continue to examine campaign outcomes. The goal will be to help our client gain a deeper understanding of various crowdfunding campaign performances. 
 
-As an upcoming playwright, Louise wants to start a crowdfunding campaign for her new play, Fever. To help with her first fundraising campaign, I am analyzing data to determine if there are specific factors that help campaigns achieve success. These insights will assist Louise in setting up a campaign using the factors that may contribute to success.  
+The analysis indicated the month of May held the highest numbers of successful outcomes. An additional analysis of the outcomes based on goal ranges indicated the most successful outcomes occurred in the less than $1,000 range. Based on this analysis, these were among the final recommendations. 
 
- 
-
-***Initial Insights:***  
-Great Britain is the better market for a theater campaign than the US. There were a total of 3038  campaigns in the US. Of these campaigns, 54% were successful with only 32% of successful campaigns being theater campaigns. Alternatively, while Great Britain only had 604 total campaigns, it also has a 61% success rate, with theater campaigns making up over 70% of the total for successful campaigns.  
-
-
-![Theater Campaign Success in US](https://user-images.githubusercontent.com/84739988/121405694-f74cab00-c922-11eb-9a28-aa78abe0d9a2.png)
-
-
-![Theater Campaign Success in Great Britain](https://user-images.githubusercontent.com/84739988/121405741-05023080-c923-11eb-9356-8ce601080a37.png)
-
-
- 
-
-***Timeline:*** 
-
-In both the US and Great Britain, May hosts the most successful theater campaign launches than any other month.  However, the trends for the rest of the year differ. In Great Britain, spring and summer months spike with successful theater campaign launches with peak successful launches in May and June. In the US, successful theater campaign launches peak in Ma and steadily decline throughout the rest of the year.  
+The remainder of the report contains the details for the analysis, along with difficulties I encountered. The final section lists my final conclusions of the analysis. It also includes limitations and a recommendation of additional tables and graphs for this analysis. 
 
 
 
-![Successful Campaigns Launch Month in US](https://user-images.githubusercontent.com/84739988/121405865-25ca8600-c923-11eb-8e3d-24fc40e041b7.png)
+## Analysis and Challenges 
+Using the crowdfunding dataset, I created pivot tables and line charts to visualize relationships. The first pivot table and line chart was created to demonstrate the relationship between launch date month and outcomes. An additional pivot table and line chart depict the percentages of the various campaign outcomes in relation to the goal. 
 
-![Success Campaigns Launch Month in Great Britain](https://user-images.githubusercontent.com/84739988/121405831-1d724b00-c923-11eb-9cf4-2115437e5a84.png)
+---
+### Analysis of Outcomes Based on Launch Date
+To analyze outcomes based on launch date, an additional column was added to the dataset. Using the YEAR( ) function, I was able to extract the year of each campaign, which was then used in a pivot table. The pivot table, “Theater Outcomes by Launch Date”, displays the data for launch date and outcomes. A corresponding line chart seen in Figure 1, “Theater_Outcomes_vs_Launch”, works to visualize the relationship between successful, failed, and canceled outcomes and the launch month. 
+
+Successful theater outcomes experience a small spike in February, followed by a steady climb that peaks in May, at 111 successful outcomes. June has the second highest number of successful outcomes, followed by July. The remainder of the year shows a steady decline in the number of successful outcomes, with one last peak in October. 
+
+Displaying a similar trend to successful outcomes, the failed theater outcomes also display a rise in failed launches in February, with a steady climb to peak in May. However, unlike successful theater outcomes, failed outcomes are fairly static through August. Following a similar trend to successful outcomes again in September through November, the year ended with another increase in the number of failed outcomes.
+
+Finally, canceled outcomes remained static throughout the year. 
+
+Figure 1:
+![](Resources/Theater_Outcomes_vs_Launch.png)
 
 
 
- 
 
-***Foresight” Play:*** 
+---
+### Analysis of Outcomes Based on Goals
+To collect the outcome and goal data, the goals were grouped based on their goal amount. Applying the COUNTIFS( ) function, I used the aggregated data to calculate the percentage of each outcome in relation to its goal. The “Outcomes Based on Goal” chart seen in Figure 2 visualized the percentage of successful, failed, and canceled plays based on the goal range. 
 
-To gain further insights into the Great Britain market, I analyzed a project similar to Louise’s scope and type. The “Foresight” play raised 722% of its original goal. It also had a low number of backers (17) with a high average donation amount ($849). The campaign lasted less than four weeks, suggesting a short campaign may be the most strategic.  
 
- 
 
-***5 Plays at Edinburgh Festival Fringe:*** 
 
-At the Einburgh Festival Fringe, Louise was inspired by five plays. They were titled *Be Prepared*, *Checkpoint22*, *Cutting of Kate Bush*, *Jestia & Raedon*, and *The Hitchhiker’s Guide to the Family*. Of the five plays, all of them were successful campaigns. In addition, the goal amount for each play was low, falling between $1,000 and $4,000. 
 
- 
+Successful outcomes demonstrated the highest percentages in the less than $1,000 range. Alternatively, canceled outcomes had the highest percentages in the $25,000 to $29,999 range, while failed outcomes were experienced most in the $45,000 to $49,999 range. 
+Of all goal ranges, successful campaigns in the less than $1,000 goal range had the highest percentage of campaigns at 76%. 
 
-***Successful and Failed Kickstarter Campaign Statistics:*** 
+The percentage of canceled outcomes (0%) is lowest in the less than $1,000 range. However, canceled outcomes demonstrate a significant spike in the $1,000 to $4,999 range to approximately 50% and remain static until $25,000. As mentioned before, the percentage canceled (67%) is highest in the $25,000 to $29,999 goal range, but returns to approximately 50% for the remaining ranges. 
 
-*Creating descriptive statistics for successful and failed Kickstarter campaigns provided a deeper analysis.  
+Again, 76% of the outcomes in the less than $1,000 range were successful. While it was the second highest range, the $1,000 to $4999 range demonstrates a significantly smaller percentage of successful outcomes of approximately 36%, followed closely by the $35,000 to $39,999 and $40,000 to $49,999 ranges at 33% each. The least successful range was the $45,000 to $49,999 range, which correlates with the highest rates of failed outcomes. The $25,000 to $29,999 range is the second least successful range corresponding with the highest percentage of canceled outcomes in the same range. 
 
-*Failed Kickstarter campaigns had significantly higher campaign goals than successful campaigns. 
+As previously mentioned, failed outcomes were highest in the $45,000 to $49,999 range at 51%. With a 16 percentage point drop, the $30,000 to $34,999 range is the second highest at 35% followed by 28% in the $20,000 to 24,999 goal range. 
 
-*Each distribution’s mean is around Q3, so the data all follows a similar distribution 
 
-*The mean for failed goals is much higher than the median for failed goals, which means there may be outliers affecting the analysis.  
 
-*The mean for successful campaign pledges is higher than the median for successful campaign pledges indicating potential outliers.  
 
- 
+Figure 2
+![](Resources/Outcomes_vs_Goals.png)
 
-***Researching Musicals in Great Britain:***  
 
-I was un able to research musicals in Great Britain. Excel shuts down every time I try to create a boxplot. I have a tutoring appointment this week to get help with this.  
 
- 
 
- 
+## Challenges & Difficulties Encountered
+COUNTIF( ) was a challenge at first. I was able to understand how to integrate text using quotations into the function, which gave me the correct results. 
+
+## Results
+Conclusions re: Outcomes Based on Launch Date
+The outcomes based on the launch date analysis shows the highest rate of launches occurring in May at 111 successful launches with the month of June holding the second highest number of successful outcomes at 100. Therefore, I recommend launching within one of these months. Additionally, December shows the least amount of successful launches at only 37 total.
+
+## Conclusions re: Outcomes Based on Goals
+Based on the analysis, the goal range with the highest success rate is the less than $1,000 range. At a 76% rate, this is the goal range I recommend.
+
+## Limitations of the Dataset
+Data is OLD... It may have been the limitations of the dataset or limited knowledge on my behalf, but it would have been helpful to be able to drill down on more differences between the different outcomes. This would have allowed for greater insight into factors that may contribute to the various outcomes. 
+
+## Suggested Additional Tables & Graphs
+
